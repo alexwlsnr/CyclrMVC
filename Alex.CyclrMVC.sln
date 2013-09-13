@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alex.CyclrMVC", "Alex.CyclrMVC\Alex.CyclrMVC.csproj", "{44E00C98-2042-4D1B-B1D1-A9F60E15B12E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alex.CyclrMVC.Tests", "Alex.CyclrMVC.Tests\Alex.CyclrMVC.Tests.csproj", "{97A2ACA4-BCD1-4028-A252-C2D874FA87B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alex.CyclrMVC", "Alex.CyclrMVC\Alex.CyclrMVC.csproj", "{C61199C2-234E-4A08-AE32-06BCD7C7C11E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{44E00C98-2042-4D1B-B1D1-A9F60E15B12E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44E00C98-2042-4D1B-B1D1-A9F60E15B12E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44E00C98-2042-4D1B-B1D1-A9F60E15B12E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44E00C98-2042-4D1B-B1D1-A9F60E15B12E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{97A2ACA4-BCD1-4028-A252-C2D874FA87B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{97A2ACA4-BCD1-4028-A252-C2D874FA87B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97A2ACA4-BCD1-4028-A252-C2D874FA87B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97A2ACA4-BCD1-4028-A252-C2D874FA87B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C61199C2-234E-4A08-AE32-06BCD7C7C11E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C61199C2-234E-4A08-AE32-06BCD7C7C11E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C61199C2-234E-4A08-AE32-06BCD7C7C11E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C61199C2-234E-4A08-AE32-06BCD7C7C11E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

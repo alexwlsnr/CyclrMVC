@@ -6,12 +6,15 @@ using System.Web.Mvc;
 
 namespace Alex.CyclrMVC.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BootstrapBaseController
     {
-        public ActionResult Index(string returnUrl)
-        {
-            ViewBag.ReturnUrl = returnUrl;
+
+        public ActionResult Index()
+        {                           
             return View();
         }
+
+        
+
     }
 }

@@ -105,12 +105,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Alex.CyclrMVC\Alex.CyclrMVC.csproj">
-      <Project>{44E00C98-2042-4D1B-B1D1-A9F60E15B12E}</Project>
-      <Name>Alex.CyclrMVC</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
