@@ -14,14 +14,15 @@ namespace BootstrapSupport
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/jquery.validate.js",
                 "~/scripts/jquery.validate.unobtrusive.js",
-                "~/Scripts/jquery.validate.unobtrusive-custom-for-bootstrap.js"
+                "~/Scripts/jquery.validate.unobtrusive-custom-for-bootstrap.js",
+                "~/Scripts/bootstrap-datetimepicker.js",
+                "~/Scripts/functions.js"
                 ));
 
             bundles.Add(new StyleBundle("~/content/css").Include(
                 "~/Content/bootstrap/bootstrap.css",
-                "~/Content/body.css"
-                //"~/Content/bootstrap-responsive.css"
-                //"~/Content/bootstrap/bootstrap-theme.css"
+                "~/Content/body.css",
+                "~/Content/bootstrap/datetimepicker.css"
                 ));
         }
     }

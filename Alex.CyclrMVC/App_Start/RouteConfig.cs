@@ -19,7 +19,7 @@ namespace Alex.CyclrMVC
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
-            routes.MapNavigationRoute("API-navigation", "API", "api", new { controller = "Home", action = "Index" });
+            routes.MapNavigationRoute("API-navigation", "API", "help", new { controller = "Home", action = "Index" });
         }
     }
 }
