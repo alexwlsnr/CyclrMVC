@@ -19,19 +19,34 @@ namespace Alex.CyclrMVC.Controllers
         }
 
 
-        public int GetCycleTime(DateTime startDate)
+        public long GetCycleTime(DateTime startDate)
         {
-            return GetCycleTime(startDate.ToUniversalTime(), DateTime.Now);
+            return GetCycleTime(startDate, DateTime.Now);
         }
 
-        public int GetCycleTime(DateTime startDate, DateTime endDate)
+        public long GetCycleTime(DateTime startDate, DateTime endDate)
         {
-            var universalStartDate = startDate.ToUniversalTime();
+            var localStartDate = LocalDateTime.FromDateTime(startDate.ToUniversalTime());
+            var localEndDate = LocalDateTime.FromDateTime(endDate.ToUniversalTime());
 
+            //Calculate Day diff first
+            var cyclePeriod = Period.Between(localStartDate, localEndDate);
+            var dayDifference = cyclePeriod.Days;
 
+            for (var dayIndex = 0; dayIndex <= cyclePeriod.Days; dayIndex++)
+            {
+                if (localStartDate.PlusDays(dayIndex).IsoDayOfWeek == IsoDayOfWeek.Saturday || localStartDate.PlusDays(dayIndex).IsoDayOfWeek == IsoDayOfWeek.Sunday)
+                {
+                    dayDifference--;
+                }
+            }
 
+            //Then calculate remaining hours
+            var hourDifference = cyclePeriod.Hours;
 
-            return 0;
+            // Still pretty limited, will return bad data if 
+            // the end date is on a weekend for example
+            return dayDifference * 8 + (long)hourDifference;
         }
 
     }

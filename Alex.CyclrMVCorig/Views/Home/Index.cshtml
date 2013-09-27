@@ -1,0 +1,37 @@
+﻿@model Alex.CyclrMVC.Models.Cycle
+@{
+    ViewBag.Title = "Cyclr";
+}
+@functions{
+    public string GetAntiForgeryToken()
+    {
+        string cookieToken, formToken;
+        AntiForgery.GetTokens(null, out cookieToken, out formToken);
+        return cookieToken + ":" + formToken;                
+    }
+}
+
+<header>
+    <h1>@ViewBag.Title</h1>
+</header>
+
+<div id="main-content">
+
+    <input id="antiForgeryToken" type="hidden" value="@GetAntiForgeryToken()" />
+    
+
+    <section id="lists">
+        <article class="cycleTime">
+            @Html.EditorForModel()
+
+            <button id ="calculateCycleTime">Calculate</button>
+            <p class="error" data-bind="visible: errorMessage, text: errorMessage"></p>
+        </article>
+    </section>
+
+</div>
+
+
+    @section scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
